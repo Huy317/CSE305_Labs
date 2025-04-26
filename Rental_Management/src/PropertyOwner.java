@@ -1,8 +1,8 @@
 import java.util.ArrayList;
 
 public class PropertyOwner {
-    private User user;
-    private ArrayList<Property> listOfProperties;
+    User user;
+    ArrayList<Property> listOfProperties;
 
     public PropertyOwner(User user, ArrayList<Property> listOfProperties) {
         this.user = user;
@@ -14,19 +14,11 @@ public class PropertyOwner {
     }
     public void removeProperty(Property prop){
         for (int i = 0;i<listOfProperties.size();i++){
-            if (listOfProperties.get(i).getPropertyId().equals(prop.getPropertyId())){
+            if (listOfProperties.get(i).propertyId.equals(prop.propertyId)){
                 listOfProperties.remove(i);
                 break;
             }
         }
-    }
-
-    public User getUser() {
-        return user;
-    }
-
-    public ArrayList<Property> getListOfProperties() {
-        return listOfProperties;
     }
     
 }

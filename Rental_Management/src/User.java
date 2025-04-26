@@ -29,7 +29,16 @@ public class User {
         this.userType = type;
         sc.close();
     }
-
+    public void resetPassword(){
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter new password: ");
+        String newPass = sc.nextLine();
+        this.password = newPass;
+        sc.close();
+    }
+    public String toString(){
+        return userId+" "+password+" "+email+" "+userType;
+    }
     public String getUserId() {
         return userId;
     }

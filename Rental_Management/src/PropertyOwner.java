@@ -14,7 +14,7 @@ public class PropertyOwner {
     }
     public void removeProperty(Property prop){
         for (int i = 0;i<listOfProperties.size();i++){
-            if (listOfProperties.get(i).propertyId.equals(prop.propertyId)){
+            if (listOfProperties.get(i).getPropertyId().equals(prop.getPropertyId())){
                 listOfProperties.remove(i);
                 break;
             }

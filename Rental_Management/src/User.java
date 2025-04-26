@@ -1,10 +1,10 @@
 import java.util.*;
 
 public class User {
-    String userId;
-    String password;
-    String email;
-    String userType;
+    private String userId;
+    private String password;
+    private String email;
+    private String userType;
 
     public User(String userId, String password, String email, String userType) {
         this.userId = userId;
@@ -28,5 +28,21 @@ public class User {
         this.email = email;
         this.userType = type;
         sc.close();
+    }
+
+    public String getUserId() {
+        return userId;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public String getUserType() {
+        return userType;
     }
 }

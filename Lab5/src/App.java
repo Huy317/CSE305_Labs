@@ -1,5 +1,6 @@
 public class App {
     public static void main(String[] args) throws Exception {
-        System.out.println("Hello, World!");
+        ContractBuilder contractBuilder = new PermanentContractBuilder().buildContractID("1").buildRentAmount(999);
+        System.out.println(contractBuilder.signContract().toString());
     }
 }
